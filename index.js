@@ -1,4 +1,5 @@
-    function callCONSTRUCTORSAPI(){
+alert("Welcome to F1 lookup");
+function callCONSTRUCTORSAPI(){
       fetch('http://ergast.com/api/f1/constructors')
       .then(response => response.json())
       .then(json => console.log(json))

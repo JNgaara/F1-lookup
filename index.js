@@ -13,8 +13,12 @@
     const inputTeam = document.getElementById('team');
     let inputDriver = document.getElementById('driver');
     let inputSeason = document.getElementById('Season');
+      const submit = document.submit.addEventListener
 
 
+    function getFormInfor(){
+      const formF1 =document.forms["formF1Input"]
+    }
 
     function callDriversAPI(){
       fetch('http://ergast.com/api/f1/drivers')

@@ -16,7 +16,7 @@ function callCONSTRUCTORSAPI(){
         const Driver =document.getElementById('driver');
       })
     
-      document.getElementById("submit").addEventListener('click',findResult)
+      document.addEventListener('click',findResult)
     
     function findResult(){
       alert(inputDriver);

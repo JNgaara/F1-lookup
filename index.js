@@ -8,6 +8,13 @@
       .then(response => response.json())
       .then(json => console.log(json))
     }
+    
+    let userSearch = [];
+    const inputTeam = document.getElementById('team');
+    let inputDriver = document.getElementById('driver');
+    let inputSeason = document.getElementById('Season');
+
+
 
     function callDriversAPI(){
       fetch('http://ergast.com/api/f1/drivers')

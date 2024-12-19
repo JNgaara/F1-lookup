@@ -14,3 +14,9 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
       .then(json => console.log(json))
     }
+
+    function callCircuitsAPI(){
+      fetch('http://ergast.com/api/f1/circuits')
+      .then(response => response.json())
+      .then(json => console.log(json))
+    }

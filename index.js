@@ -4,15 +4,18 @@ function callCONSTRUCTORSAPI(){
       .then(response => response.json())
       .then(json => console.log(json))
     }
-    
+    const searchObj = [ team: ' ', driver:' ' , season: ' '  ];
     let userSearch = [];
+    const uForm = document.getElementById("formF1Input";)
     const inputTeam = document.getElementById('team');
-    let inputDriver = document.getElementById('driver');
-    let inputSeason = document.getElementById('Season');
-      const submit = document.submit.addEventListener('click',()=>{
+    const inputDriver = document.getElementById('driver');
+    const inputSeason = document.getElementById('Season');
+    
+    const submit = document.submit.addEventListener('click',()=>{
         const Driver =document.getElementById('driver');
       })
-    document.getElementById("submit").addEventListener('click',findResult)
+    
+      document.getElementById("submit").addEventListener('click',findResult)
     
     function findResult(){
       alert("the formm was submitted");
@@ -20,7 +23,11 @@ function callCONSTRUCTORSAPI(){
     }
     
     function getFormInfo(){
-      const formF1 =document.forms["formF1Input"]
+      const formF1 =document.forms["formF1Input"];
+      const faveTeam = document.getElementById("Team");
+      const faveDriver = document.getElementById("Driver");
+      const faveSeason = document.getElementById("Season");
+
     }
 
     function callDriversAPI(){

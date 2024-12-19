@@ -1,8 +1,3 @@
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//       .then(response => response.json())
-//       .then(json => console.log(json))
-    //   fetch code to fecth and connect to placehodler api
-    //   in practise api on wednesday in class morning standup
     function callCONSTRUCTORSAPI(){
       fetch('http://ergast.com/api/f1/constructors')
       .then(response => response.json())
@@ -14,9 +9,13 @@
     let inputDriver = document.getElementById('driver');
     let inputSeason = document.getElementById('Season');
       const submit = document.submit.addEventListener
-
-
-    function getFormInfor(){
+    document.getElementById("formF1Input").addEventListener("submit",findResult)
+    
+    function findResult(){
+      alert("the formm was submitted");
+    }
+    
+    function getFormInfo(){
       const formF1 =document.forms["formF1Input"]
     }
 

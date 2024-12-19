@@ -9,11 +9,14 @@ function callCONSTRUCTORSAPI(){
     const inputTeam = document.getElementById('team');
     let inputDriver = document.getElementById('driver');
     let inputSeason = document.getElementById('Season');
-      const submit = document.submit.addEventListener
-    document.getElementById("formF1Input").addEventListener("submit",findResult)
+      const submit = document.submit.addEventListener('click',()=>{
+        const Driver =document.getElementById('driver');
+      })
+    document.getElementById("submit").addEventListener('click',findResult)
     
     function findResult(){
       alert("the formm was submitted");
+      console.log(inputDriver);
     }
     
     function getFormInfo(){

@@ -18,8 +18,7 @@ function callCONSTRUCTORSAPI(){
     
     function findResult(){
       // alert();
-      document.uForm.style.backgroundColor = "green";
-      console.log(inputDriver);
+      console.log("end of find result");
     }
     
     function getFormInfo(){
@@ -27,6 +26,9 @@ function callCONSTRUCTORSAPI(){
       const faveTeam = document.getElementById("Team");
       const faveDriver = document.getElementById("Driver");
       const faveSeason = document.getElementById("Season");
+      searchObj = [ faveTeam,faveDriver,faveSeason];
+      console.log(searchObj[0]);
+      
 
     }
 

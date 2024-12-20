@@ -18,8 +18,8 @@ function callCONSTRUCTORSAPI(){
       document.getElementById("submit").addEventListener("click",findResult)
     
     function findResult(){
-      //alert(inputDriver);
-      document.body.style.backgroundColor = "green";
+      alert();
+      // document.body.style.backgroundColor = "green";
       console.log(inputDriver);
     }
     

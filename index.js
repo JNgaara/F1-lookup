@@ -3,7 +3,7 @@ function callCONSTRUCTORSAPI(){
       .then(response => response.json())
       .then(json => console.log(json))
     }
-    const searchObj = [ team: ' ', driver:' ' , season: ' '  ];
+    const searchObj = [ team= ' ', driver=' ' , season= ' '  ];
     let userSearch = [];
     const uForm = document.getElementById("formF1Input";)
     const inputTeam = document.getElementById('team');

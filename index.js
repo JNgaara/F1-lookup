@@ -11,7 +11,6 @@ function callCONSTRUCTORSAPI(){
     const inputDriver = document.getElementById('driver');
     const inputSeason = document.getElementById('Season');
     
-    document.body.style.backgroundColor="green";
     const submit = document.submit.addEventListener('click',()=>{
         const Driver =document.getElementById('driver');
       })

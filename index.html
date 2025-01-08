@@ -1,49 +1,65 @@
-<!DOCTYPE html>
-<html lang ="mul">
-    <head>
-        
-    </head>
-    <body style = "background-color:powderblue;">
 
-        <!-- <header class="title" id="title">
+
+<!DOCTYPE html> 
+<html lang = "en">
+    <!-- <head>
+        <meta charset=" UTF-8">
+        <title>F1 Lookup</title>
+    </head> -->
+<body style="color:white; background-color:darkolivegreen;">
+
+  <div class="container mt-5">
+     
+    <div class="text-center">
+        <h1>F1 LOOKUP</h1>
+     </div>
+
+     <div>
+        <form id="formF1">
+                
+            <div class="col-10 mb-3">
+                <label for="Team"> Team</label>
+                <input class="form-control" id="Team" type="text" placeholder="Enter Team name">
+            </div>
+                  
+            <div>
+                <label for="Driver"> Driver</label>
+                <input class="form-control" id="Driver" type="text" placeholder="Enter Driver name">    
+            </div>
+                  
+            <div>
+                <label for="Season"> Season</label>
+                <input class="form-control" id="Season" type="text" placeholder="Enter Season name">
+            </div>
+         
+            <div>
+                <input  id="submit" class="btn btn-success add-btn" type="submit" value="Submit">
+            </div>
+         </form> 
+
+         <div>
+          <table class="table table-striped table-dark">
             
-        </header> -->
-        <title st> Formula One Lookup        </title>
-            <h1>Formula One History Simplified  </h1>
-      <!-- </div> -->
-      <form name ="formF1Input" id="formF1Input" >
-        <style>
-        background-color:rgb(53, 53, 66) ;
-        </style>
-        <div>
-            <label for="team">Enter Team</label>
-            <input type="text" id="Team" name="team" placeholder=" Racing Team A">
-        </div>
-        <br>
-        
-        <div>
-            <label for="driver">Enter Driver</label>
-            <input type="text" id="Driver" name="driver" >
-        </div>
-        <br>
-        <div>
-            <label for="Season">Enter Season</label>
-            <input type="text" id="season" name="Season" placeholder=" yyyy">
-        </div>
-        <br>
-        
-        <textarea rows="" cols=""> Your search resulted in </textarea>
-        <br>
-        <!-- could i  make a div for the output text box and change the colour of 
-         irt maybe by document.getElementId('outputBlockId') -->
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>Driver</th>
+                <th>Season</th>
+              </tr>
+            </thead>
+            
+            
+            <tbody class="Victories-List" id="Victories-List">
+              <tr>
+                <td>Number Of Championships</td>
+                <td> </td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+      </div>
 
-        <output name="outputBlock" for="outputBlock"></output>
-        <br>
+   </div>
+</body>
 
-        <button type="input">Submit search parameters </button>
-    </form>  
-
-        <script src="index.js"></script>
-    </body>
-    
 </html>
